@@ -1,1 +1,3 @@
-theme: jekyll-theme-minimal
+title       : Documentation @ glitch-soc
+description : A place to describe glitch-soc and how it differs from upstream mastodon.
+theme       : jekyll-theme-minimal
