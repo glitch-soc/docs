@@ -10,5 +10,6 @@ title : Features
  -  [App settings](./app-settings/)
  -  [Collapsible toots](./collapsible-toots/)
  -  [Profile metadata](./profile-metadata/)
+ -  [Toot visibility icons](./visibility-icons/)
 
 Click on a feature name to learn more.
