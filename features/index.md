@@ -11,5 +11,6 @@ title : Features
  -  [Collapsible toots](./collapsible-toots/)
  -  [Profile metadata](./profile-metadata/)
  -  [Toot visibility icons](./visibility-icons/)
+ -  [Local-only toots](./local-only-toots/)
 
 Click on a feature name to learn more.
