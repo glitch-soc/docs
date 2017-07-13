@@ -28,11 +28,16 @@ You can browse our source code and contribute to the project [on Github][glitch-
 
 For the full list of features, see [Features][].
 
+###  How can I help?
+
+You can get information on contributing [here][Contributing].
+
 ###  Disclaimer
 
 `glitch-soc` is beta software, and under active development.
 Use at your own risk!
 
+[Contributing]: ./contributing/
 [Features]: ./features/
 [fork]: https://en.wikipedia.org/wiki/Fork_(software_development)
 [glitch-soc]: https://github.com/glitch-soc/mastodon/
