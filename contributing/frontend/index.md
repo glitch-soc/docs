@@ -81,6 +81,14 @@ Inside the `glitch` folder, there are the following subfolders:
     The name of the component should reflect this structure; for example the component at `components/status/gallery/item` is named `StatusGalleryItem`.
 
     Ideally, each file should contain (and export) only a single component.
+    
+-   __`locales`__ : Here live Glitchsoc custom translations and overrides to the original mastodon messages. We decided
+    to split this off from `mastodon/locales` to avoid merge conflicts. We have adjusted the locale script, so messages
+    in `glitch/locales` are added to, and replace if needed, messages with matching keys from `mastodon/locales`.
+    
+    _Please try to avoid modifying the original files_ (eg. by running `yarn manage:translations` and commiting the 
+    changes). Don't worry about `defaultMessages.json`, it's presently not used for anything - all the important stuff 
+    goes in `en.json` (or other languages, if you like).
 
  -  __`reducers` :__
     These are Redux reducers, to complement the actions provided by the `actions` folder.
