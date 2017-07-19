@@ -2,14 +2,12 @@
 title : Contributing to the Frontend
 ---
 
-##  Contributing to the Frontend  ##
-
 >   Hey there!
 >   Glad you're interested in helping us with this project.
 >   Below are some guidelines and important things to note when contributing to the `glitch-soc` frontend (the "web view" app).
 >   If you have any questions, don't be afraid to reach out!!
 >
->   <p style="text-align: right;">With love,<br>– <a href="https://glitch.social/@kibi">kibigo!</a></p>
+>   <footer>With love,<br>:heart: <a href="https://glitch.social/@kibi">kibigo!</a></footer>
 
 Mastodon's frontend is developed with [React](https://facebook.github.io/react/) and [Redux](http://redux.js.org/) and served using [Webpack](https://webpack.js.org/).
 Depending on what you're hoping to work on, you can get by without understanding the specifics of Redux or Webpack but knowledge of React is a must.
@@ -81,13 +79,13 @@ Inside the `glitch` folder, there are the following subfolders:
     The name of the component should reflect this structure; for example the component at `components/status/gallery/item` is named `StatusGalleryItem`.
 
     Ideally, each file should contain (and export) only a single component.
-    
+
 -   __`locales`__ : Here live Glitchsoc custom translations and overrides to the original mastodon messages. We decided
     to split this off from `mastodon/locales` to avoid merge conflicts. We have adjusted the locale script, so messages
     in `glitch/locales` are added to, and replace if needed, messages with matching keys from `mastodon/locales`.
-    
-    _Please try to avoid modifying the original files_ (eg. by running `yarn manage:translations` and commiting the 
-    changes). Don't worry about `defaultMessages.json`, it's presently not used for anything - all the important stuff 
+
+    _Please try to avoid modifying the original files_ (eg. by running `yarn manage:translations` and commiting the
+    changes). Don't worry about `defaultMessages.json`, it's presently not used for anything - all the important stuff
     goes in `en.json` (or other languages, if you like).
 
  -  __`reducers` :__
@@ -115,8 +113,8 @@ Open-source is only open to those people who can read the source, and having a w
 
  - - -
 
-<address style="text-align: right; font-style: inherit;">
+<footer>
     Happy coding, and thanks for helping out!<br>
-    <strong style="font-size: 1.2em;">:heart: kibigo!</strong><br>
+    <strong style="text-decoration: none; font-size: 1.2em; line-height: 1.125;">:heart: kibigo!</strong><br>
     <small><a href="https://glitch.social/@kibi">@kibi@glitch.social</a></small>
-</address>
+</footer>

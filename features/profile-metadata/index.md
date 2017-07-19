@@ -2,8 +2,6 @@
 title: Profile metadata
 ---
 
-##  Profile metadata  ##
-
 `glitch-soc` allows users to input optional `key: value` pairs as YAML-esque frontmatter at the beginning of their bios, which is then rendered in a table by the frontend and on static pages.
 
 This is what it looks like for logged-in users on a glitch-soc server:
@@ -29,7 +27,7 @@ what's up
 
 ###  Syntax
 
-> *In brief:* start with `---`, then add `key: value` one per line, 
+> *In brief:* start with `---`, then add `key: value` one per line,
 > and close it with `...` on it's own line. Anything that follows
 > is your bio text.
 

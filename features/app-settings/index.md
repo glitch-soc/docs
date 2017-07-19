@@ -2,8 +2,6 @@
 title: App settings
 ---
 
-##  App settings  ##
-
 `glitch-soc` provides an App Settings modal to allow users to personalize the `glitch-soc` frontend.
 This modal is accessible by clicking the "cogs" icon above the compose window, or from the Getting Started menu.
 

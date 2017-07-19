@@ -2,8 +2,6 @@
 title : Features
 ---
 
-##  Features  ##
-
 `glitch-soc` offers the following features above and beyond `tootsuite/mastodon`:
 
  -  [Media improvements](./media/)

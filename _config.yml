@@ -1,5 +1,6 @@
-title       : Documentation @ glitch-soc
-description : A place to describe glitch-soc and how it differs from upstream mastodon.
-theme       : jekyll-theme-minimal
-gems        :
-  - jemoji
+title: "Mastodon: Glitch Edition"
+description: "A friendly fork of the open-source social network software Mastodon."
+lang: "en"
+timezone: "America/Toronto"
+gems:
+  - "jemoji"

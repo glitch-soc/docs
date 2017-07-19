@@ -2,8 +2,6 @@
 title: Local-only toots
 ---
 
-##  Local-only toots  ##
-
 `glitch-soc` adds a feature called "local-only" or "non-federated" toots. Toots marked as such do not automatically federate to other instances, making them ideal for example for local server announcements and meta-discussion. Currently, local-only toots may still federate in certain circumstances, described below.
 
 ### Compose UI

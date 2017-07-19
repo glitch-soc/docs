@@ -2,8 +2,6 @@
 title : Contributing
 ---
 
-##  Contributing  ##
-
 Click one of the following links to learn more:
 
  -  [Contributing to the Frontend](./frontend/)

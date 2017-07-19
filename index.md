@@ -1,8 +1,6 @@
 ---
 title : Introduction
----
-
-##  Introduction  ##
+...
 
 Welcome to the documentation site for `glitch-soc`!
 `glitch-soc` is a friendly [fork][] of the open-source social media software [Mastodon][], with the aim of providing additional features at the risk of potentially less stable software.

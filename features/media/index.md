@@ -2,8 +2,6 @@
 title: Media improvements
 ---
 
-##  Media improvements  ##
-
 `glitch-soc` has made a number of improvements to how media displays itself in the frontend.
 These are outlined below.
 
@@ -31,7 +29,7 @@ This option is configurable in [App Settings](../app-settings/).
 
 **Letterbox ON**
 
-![letterbox on](letterbox-on.png) 
+![letterbox on](letterbox-on.png)
 
 **Letterbox OFF**
 

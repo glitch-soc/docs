@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+  <head>
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title | default: site.github.repository_name }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="{{ '/src/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/icons/apple-touch-icon.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/icons/favicon-32x32.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/icons/favicon-16x16.png' | relative_url }}">
+    <link rel="manifest" href="{{ '/src/manifest.json' | relative_url }}">
+    <link rel="shortcut icon" href="{{ '/icons/favicon.ico' | relative_url }}">
+    <meta name="msapplication-config" content="{{ '/src/browserconfig.xml' | relative_url }}">
+    <meta name="theme-color" content="#000000">
+  </head>
+  <body>
+    <a href="{{ site.url }}/" target="_self">
+      <header>
+        <h1>{{ site.title | default: site.github.repository_name }}</h1>
+      </header>
+    </a>
+    <main>
+      <article>
+        <header>
+          {% if page.title %}<h2>{{ page.title  }}</h2>{% endif %}
+        </header>
+        {{ content }}
+      </article>
+    </main>
+  </body>
+</html>
