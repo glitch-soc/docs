@@ -2,13 +2,84 @@
 ...
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css?family=Gentium+Basic:400,400i,700,700i|VT323&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400i,700,700i|VT323|Anonymous+Pro:400,400i,700,700i&subset=latin-ext');
 @import url(//fonts.googleapis.com/earlyaccess/roundedmplus1c.css);
+
+/*  BASIC WEB STYLING  */
+/*  Color palette taken from the \u2764 64-colour palette  */
+
+$web-background-color: #1c1c1c;  //  _01
+$web-foreground-color: #ebebeb;  //  _09
+$web-text-color: #1c1c1c;        //  _01
+$web-accent-color: #528572;      //  ♠︎65
+$web-bright-color: #82dcb9;      //  ♠︎68
+$web-link-color: inherit;        //  inherited
+$web-link-hover-color: #528572;  //  ♠︎65
+$web-alternate-color:  #28323f;  //  ♢22
+$web-aside-color: #717c88;       //  ♢25
+$web-faded-color: #c1cbd5;       //  ♢28 – Low contrast
+
+/*  SYNTAX HIGHLIGHTING BY KIBIGO  */
+/*  Color palette taken from the \u2764 64-colour palette  */
+
+// General
+$syntax-text-color: #ebebeb;               //  _09
+$syntax-background-color: #28323f;         //  ♢22
+
+// Gutter
+$syntax-gutter-text-color: #d6c6c9;        //  ♡28
+$syntax-gutter-background-color: #28323f;  //  ♢22
+
+// Syntax
+$syntax-comment: #c05979;                  //  ♡A5
+$syntax-string: #2fe4b1;                   //  ♠︎A8
+$syntax-number: #d6d02f;                   //  ☂A8
+$syntax-bracket: #f9b9c6;                  //  ♡68
+$syntax-operator: #7c70ba;                 //  ☃A5
+$syntax-variable: #ffa9c5;                 //  ♡A8
+$syntax-keyword: #82dcb9;                  //  ♠︎68
+$syntax-function: #f6c442;                 //  ♣︎A8
+$syntax-definition: #a2cff5;               //  ♢68
+$syntax-property: #c8c5f4;                 //  ☃68
+$syntax-tag: #c05979;                      //  ♡A5
+$syntax-attribute: #ffa9c5;                //  ♡A8
+$syntax-error: #f9b9c6;                    //  ♡68
+$syntax-header: #c05979;                   //  ♡A5
+$syntax-link: #1c81bf;                     //  ♢A5
+$syntax-plus: #79dbcd;                     //  ☾68
+$syntax-minus: #977630;                    //  ♣︎65
+$syntax-em: #e8c77c;                       //  ♣︎68
+$syntax-strong: #7c70ba;                   //  ☃A5
+$syntax-quote: #c8c5f4;                    //  ☃68
+
+.highlight {
+  color: $syntax-text-color;
+  background: $syntax-background-color;
+
+  .c,.cm,.cp,.c1,.cs,.gt { color: $syntax-comment; font-style: italic }
+  .err,.ge,.ne { color: $syntax-error; font-style: italic; text-decoration: underline }
+  .k,.kc,.kd,.kp,.kr,.kt,.nb,.ni,.bp { color: $syntax-keyword }
+  .o,.ow { color: $syntax-operator }
+  .gd { color: $syntax-background-color; background-color: $syntax-minus }
+  .ge { color: $syntax-em; font-style: italic }
+  .gh,.gu { color: $syntax-header; font-weight: bold }
+  .gi { color: $syntax-background-color; background-color: $syntax-plus }
+  .go,.w { color: inherit }
+  .gp { color: inherit; font-style: italic }
+  .gs { color: $syntax-strong; font-weight: bold }
+  .m,.mf,.mh,.mi,.mo,.il { color: $syntax-number }
+  .s,.sc,.sd.s2,.se,.sh,.si,.so,.sr,.s1,.ss { color: $syntax-string }
+  .na { color: $syntax-attribute }
+  .nf,.nc,.nn,.vc { color: $syntax-function }
+  .nt { color: $syntax-tag }
+  .nv,.no,.vg,.vi,.nx { color: $syntax-variable }
+  .sb { color: $syntax-bracket }
+}
 
 /*  GLOBAL RULES  */
 
 *:root {
-  font-family: "Gentium Basic", serif;
+  font-family: "Gentium Book Basic", serif;
   font-size: large;
   font-weight: 400;
   font-synthesis: none;
@@ -47,8 +118,8 @@ html {
   margin: 0;
   padding: 0;
   line-height: 1.35;
-  color: ghostwhite;
-  background: black;
+  color: $web-foreground-color;
+  background: $web-background-color;
 }
 
 body {
@@ -72,9 +143,9 @@ nav {
 aside {
   margin: .3375rem 0;
   border: thick currentColor double;
-  border-color: transparent lightslategrey;
+  border-color: transparent $web-faded-color;
   padding: .3375rem 1rem;
-  color: slategrey;
+  color: $web-aside-color;
   font-size: .85em;
   line-height: 1.25;
 }
@@ -83,7 +154,7 @@ footer {
   margin: .3375rem 0;
   border: none;
   padding: 0;
-  color: darkslategrey;
+  color: $web-alternate-color;
   font-size: .85em;
   line-height: 1.25;
   text-align: right;
@@ -103,8 +174,8 @@ main {
   margin: 1rem auto 0;
   padding: 1.35rem 1rem 2.7rem;
   max-width: 28rem;
-  color: black;
-  background: ghostwhite;
+  color: $web-text-color;
+  background: $web-foreground-color;
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;
@@ -209,14 +280,15 @@ dd {
 blockquote {
   position: relative;
   margin: .675rem 0 .675rem .5rem;
-  border-left: 5px slategrey double;
+  border-left: 5px $web-aside-color double;
   padding: 0 2rem 0 calc(1.5rem - 5px);
+  color: $web-alternate-color;
   font-style: italic;
 
   & blockquote {
     margin: .675rem 0;
     padding: 0 1rem 0 calc(1rem - 1px);
-    border-left: 1px slategrey solid;
+    border-left: 1px $web-aside-color solid;
   }
 }
 
@@ -262,7 +334,7 @@ h1 {
   font-size: 3.5em;
   font-weight: 500;
   line-height: 1;
-  color: mediumaquamarine;
+  color: $web-bright-color;
 }
 
 h2 {
@@ -281,7 +353,7 @@ h3 {
 
 h4 {
   margin: 1.35rem 0 .675rem;
-  color: darkslategrey;
+  color: $web-accent-color;
   font-size: 1.2em;
   text-decoration: underline;
   line-height: 1.125;
@@ -319,7 +391,7 @@ hr {
   height: 1.35rem;
   background: none;
   overflow: hidden;
-  color: darkcyan;
+  color: $web-accent-color;
   font-family: "VT323", monospace;
   text-align: center;
   white-space: pre;
@@ -370,11 +442,20 @@ p {
 }
 
 pre {
-  margin: .675rem 1rem;
-  font-family: "VT323", monospace;
+  margin: .675rem auto;
+  padding: .675rem 1rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: calc(100% - 2rem);
+  color: $syntax-text-color;
+  background: $syntax-background-color;
+  font-family: "Anonymous Pro", monospace;
+  font-size: .85em;
   font-weight: 400;
   line-height: 1;
-  white-space: pre-wrap;
+  white-space: pre;
+  overflow: auto;
   -webkit-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
@@ -387,7 +468,7 @@ svg {
 /*  PHRASING  */
 
 a[href] {
-  color: darkcyan;
+  color: $web-link-color;
   text-decoration: none;
   -webkit-text-decoration-color: inherit;
   text-decoration-color: inherit;
@@ -396,7 +477,7 @@ a[href] {
   transition: color .3s, text-decoration-color .3s;
 
   &:hover {
-    color: lightseagreen;
+    color: $web-link-hover-color;
     -webkit-text-decoration-color: transparent;
     text-decoration-color: transparent;
   }
@@ -423,11 +504,16 @@ a[href] {
 
 code, samp, kbd {
   font-family: "VT323", monospace;
-  font-weight: 400;
+  font-size: .95em;
   line-height: 1;
   -webkit-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
+}
+
+dfn {
+  font-style: italic;
+  font-weight: 700;
 }
 
 small {
@@ -437,8 +523,10 @@ small {
 
 strong {
   font-weight: 700;
-  text-decoration: underline;
-  -webkit-text-decoration-style: double;
-  text-decoration-style: double;
+  font-variant: small-caps;
+
+  a[href] {
+    text-decoration: none;
+  }
 }
 

@@ -68,10 +68,10 @@ If you're creating a new file to add to the frontend, you should create it here.
 
 Inside the `glitch` folder, there are the following subfolders:
 
- -  __`actions` :__
+ -  <dfn>`actions`</dfn>:
     These are Redux action scripts.
 
- -  __`components` :__
+ -  <dfn>`components`</dfn>:
     These are all of the React components.
     The components in this folder __must not__ have direct access to the Redux store, with the exception of files with the name `container`, which __must not__ have render methods of their own.
 
@@ -80,18 +80,20 @@ Inside the `glitch` folder, there are the following subfolders:
 
     Ideally, each file should contain (and export) only a single component.
 
--   __`locales`__ : Here live Glitchsoc custom translations and overrides to the original mastodon messages. We decided
-    to split this off from `mastodon/locales` to avoid merge conflicts. We have adjusted the locale script, so messages
-    in `glitch/locales` are added to, and replace if needed, messages with matching keys from `mastodon/locales`.
+ -  <dfn>`locales`</dfn>:
+    Here live Glitchsoc custom translations and overrides to the original mastodon messages.
+    We decided to split this off from `mastodon/locales` to avoid merge conflicts.
+    We have adjusted the locale script, so messages in `glitch/locales` are added to, and replace if needed, messages with matching keys from `mastodon/locales`.
 
-    _Please try to avoid modifying the original files_ (eg. by running `yarn manage:translations` and commiting the
-    changes). Don't worry about `defaultMessages.json`, it's presently not used for anything - all the important stuff
+    **Please try to avoid modifying the original files** (eg. by running `yarn manage:translations` and commiting the
+    changes).
+    Don't worry about `defaultMessages.json`, it's presently not used for anything—all the important stuff
     goes in `en.json` (or other languages, if you like).
 
- -  __`reducers` :__
+ -  <dfn>`reducers`</dfn>:
     These are Redux reducers, to complement the actions provided by the `actions` folder.
 
- -  __`util` :__
+ -  <dfn>`util`</dfn>:
     These are generic scripts which do not fit into any of the categories above.
 
 ####  :file_folder: The `styles` folder
