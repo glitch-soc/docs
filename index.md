@@ -18,13 +18,16 @@ You can browse our source code and contribute to the project [on Github][glitch-
 
 `glitch-soc` adds a number of experimental features to Mastodon, such as:
 
- -  Fullwidth images
- -  Images inside of CWs
- -  An app settings modal
- -  Collapsible statuses
- -  Custom profile metadata
-
-For the full list of features, see [Features][].
+ -  [Media improvements](./features/media/)<br>
+    - Images inside the CW spoiler
+    - fullwidth images
+    - scaling options
+ -  [An app settings modal](./features/app-settings/)
+ -  [Collapsible toots](./features/collapsible-toots/)
+ -  [Toot visibility icons](./features/visibility-icons/)
+ -  [Local-only toots](./features/local-only-toots/)
+ -  [Custom profile metadata](./features/profile-metadata/)
+ -  [`data-*` attributes on statuses](./features/status-data-attributes/) for custom CSS targeting
 
 ###  How can I help?
 
