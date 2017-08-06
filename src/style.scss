@@ -443,17 +443,16 @@ p {
 
 pre {
   margin: .675rem auto;
-  padding: .675rem 1rem;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  max-width: calc(100% - 2rem);
+  border: $syntax-background-color solid;
+  border-width: .675rem 1rem;
+  width: 100%;
+  box-sizing: border-box;
   color: $syntax-text-color;
   background: $syntax-background-color;
   font-family: "Anonymous Pro", monospace;
-  font-size: .85em;
+  font-size: .8em;
   font-weight: 400;
-  line-height: 1;
+  line-height: 1.1;
   white-space: pre;
   overflow: auto;
   -webkit-hyphens: none;
@@ -504,11 +503,15 @@ a[href] {
 
 code, samp, kbd {
   font-family: "VT323", monospace;
-  font-size: .95em;
   line-height: 1;
   -webkit-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
+
+  pre > & {
+    font-family: inherit;
+    line-height: inherit;
+  }
 }
 
 dfn {
