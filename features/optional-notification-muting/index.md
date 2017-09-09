@@ -10,7 +10,7 @@ When muting a user, the confirmation dialog includes a checkbox asking "Hide not
 
 With "Hide notifications from this user?" checked, mutes behave like they do on ordinary Mastodon or on Twitter: you no longer see toots from the user in timelines or in the context for other toots, and you no longer receive notifications from the user. With it unchecked, mutes behave the same except you continue to receive notifications from the muted user.
 
-In the list of muted users, in users' following/followers lists, and similar lists of users, muted users have a bell-shaped button to toggle whether the mute hides notifications. When the mute currently does not hide notifications, the button hides notifications from the user and looks like:
+In the list of muted users, in users' following/followers lists, and similar lists of users, muted users have a bell-shaped button to toggle whether the mute hides notifications. When the mute currently does not hide notifications, the button reverses this behavior, hiding notifications from the user. It looks like:
 
 ![Mute list display of mutes which allow notifications](mute-list-soft-mute.png)
 
