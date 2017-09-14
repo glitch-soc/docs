@@ -28,6 +28,7 @@ You can browse our source code and contribute to the project [on Github][glitch-
  -  [Local-only toots](./features/local-only-toots/)
  -  [Custom profile metadata](./features/profile-metadata/)
  -  [`data-*` attributes on statuses](./features/status-data-attributes/) for custom CSS targeting
+ - [Optional notification muting](./features/optional-notification-muting/)
 
 ###  How can I help?
 
