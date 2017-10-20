@@ -10,9 +10,10 @@ You can browse our source code and contribute to the project [on Github][glitch-
 
 `glitch-soc` is currently in use on the following public instances:
 
- -  [dev.glitch.social](https://dev.glitch.social/)
-
->   (Instance not on the list? Let us know!)
+ - [dev.glitch.social](https://dev.glitch.social/)
+ - [toot-lab.reclaim.technology](https://toot-lab.reclaim.technology/) 
+ 
+>   (Instance not on the list? Let us know!)
 
 ###  What's different?
 
