@@ -8,7 +8,7 @@ You can browse our source code and contribute to the project [on Github][glitch-
 
 ###  Who is running `glitch-soc`?
 
-`glitch-soc` is currently in use on the following public instances:
+`glitch-soc` is currently in use on the following instances:
 
  - [dev.glitch.social](https://dev.glitch.social/)
  - [toot-lab.reclaim.technology](https://toot-lab.reclaim.technology/) 
