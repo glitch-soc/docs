@@ -13,6 +13,7 @@ You can browse our source code and contribute to the project [on Github][glitch-
  - [dev.glitch.social](https://dev.glitch.social/)
  - [toot-lab.reclaim.technology](https://toot-lab.reclaim.technology/)
  - [sdfn-01.ninjawedding.org](https://sdfn-01.ninjawedding.org/)
+ - [ostatus.lardbucket.org](https://ostatus.lardbucket.org/)
  
 >   (Instance not on the list? Let us know!)
 
