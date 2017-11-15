@@ -24,13 +24,14 @@ You can browse our source code and contribute to the project [on Github][glitch-
     - Images inside the CW spoiler
     - fullwidth images
     - scaling options
- -  [An app settings modal](./features/app-settings/)
+ -  [An app settings modal](./features/app-settings/) 
  -  [Collapsible toots](./features/collapsible-toots/)
  -  [Toot visibility icons](./features/visibility-icons/)
  -  [Local-only toots](./features/local-only-toots/)
  -  [Custom profile metadata](./features/profile-metadata/)
  -  [`data-*` attributes on statuses](./features/status-data-attributes/) for custom CSS targeting
  - [Optional notification muting](./features/optional-notification-muting/)
+ - [Optional boost hiding](./features/optional-boost-hiding/)
 
 ###  How can I help?
 
