@@ -14,6 +14,7 @@ You can browse our source code and contribute to the project [on Github][glitch-
  - [toot-lab.reclaim.technology](https://toot-lab.reclaim.technology/)
  - [sdfn-01.ninjawedding.org](https://sdfn-01.ninjawedding.org/)
  - [ostatus.lardbucket.org](https://ostatus.lardbucket.org/)
+ - [scifi.fyi](https://scifi.fyi/)
  
 >   (Instance not on the list? Let us know!)
 
