@@ -15,6 +15,7 @@ You can browse our source code and contribute to the project [on Github][glitch-
  - [sdfn-01.ninjawedding.org](https://sdfn-01.ninjawedding.org/)
  - [ostatus.lardbucket.org](https://ostatus.lardbucket.org/)
  - [scifi.fyi](https://scifi.fyi/)
+ - [sprite.land](https://sprite.land)
  
 >   (Instance not on the list? Let us know!)
 
