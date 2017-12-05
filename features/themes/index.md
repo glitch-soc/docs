@@ -1,81 +1,39 @@
 ---
-title: Themes
+title: Flavours and Skins
 ---
 
 Upstream Mastodon supports changing the site CSS on a per-user basis by specifying files in a special `config/themes.yml` file.
-Glitch themes work a little differently:
+This approach works for simple themes, but it has its limitations:
 
-1.  Glitch themes can include JavaScript and other resources, not just (S)CSS.
-    They are built using the same pack system used by Webpack for Mastodon's vanilla assets.
+1.  You can only change the CSS of a page, not its JavaScript or other elements.
+2.  The same theme is applied to all pages, regardless of type.
 
-2.  Glitch themes are designed to be incredibly easy to install, at the cost of being a little more difficult to create.
-    In particular, installing a glitch theme is as simple as dragging/cloning a folder into `app/javascript/themes`, which means glitch themes work well with technologies like git submodules.
+`glitch-soc` uses a flavour+skin system which addresses both of these problems, while making the creation of themes even simpler than it is on upstream.
+The system works as follows:
 
-Glitch themes are presented to users in exactly the same fashion as upstream themes.
-For information on creating a theme, read below.
+1.  Each instance can have any number of _flavours_, which can contain JavaScript, CSS, or anything else.
+    By default, `glitch-soc` comes with two flavours: `glitch`, which is the default, and `vanilla`, which is the frontend used by upstream.
 
-###  Theme structure
+2.  Each flavour can have any number of _skins_, which are alternate stylesheets used with the flavour.
+    [The `win95` theme](https://github.com/cybrespace/mastodon/tree/theme_win95) from `cybrespace:mastodon` is an example alternate skin for the `vanilla` flavour.
 
-Glitch themes are specified by folders inside of the `app/javascript/themes` directory.
-The theme name inherits from the name of the folder.
-Each theme folder must contain at least a `theme.yml` file, which is described further below.
-Themes may also contain any number of other files; the organization of content inside of the theme folder is left entirely up to authors.
+The flavour and skin of the Mastodon web app can be changed in the user preferences.
+For details on creating and installing additional skins and flavours, see below.
 
-###  A basic CSS theme
+###  Skins
 
-The most basic glitch theme will have a `theme.yml` file that looks something like the following:
+Glitch skins are automatically loaded from the folder `app/javascript/skins/FLAVOUR-NAME/`, where `FLAVOUR-NAME` is the name of the flavour that the skin should apply to.
+For example, if you are looking to reskin the `glitch` theme, you should place your skin in the file `app/javascript/skins/glitch/`.
 
-```yml
-pack:
-  common:
-    filename: index.js
-    stylesheet: true
+The simplest skin is just a single (S)CSS file, the name of which will be taken as the name of the skin.
+This stylesheet will be served instead of the `common` styles, which hold all of Mastodon's default styling.
+When you specify a skin, the default styling for a flavour is *not* automatically loaded, so be sure to import it in your stylesheet if needed.
 
-fallback: glitch
-```
+###  Packs
 
-The `pack` property specifies the pack files for the theme.
-In our example, we specified a `common` pack file, with a filename of `index.js`, which contains a stylesheet.
-The common pack is where glitch and vanilla Mastodon store all of their styling.
-By specifying an alternate pack, we serve our styling instead.
-
-The `fallback` property gives a theme which should be used for any unspecified pack files.
-In our case, we want to use `glitch` packs to serve our various javascripts.
-
-Our `index.js` file will look something like this:
-
-```js
-//  These lines are the same as in glitch:
-import 'font-awesome/css/font-awesome.css';
-require.context('../../images/', true);
-
-//  …But we want to use our own styles instead.
-import './myTheme.scss';
-```
-
-And, finally, our `myTheme.scss` might look like the following:
-
-```scss
-//  Variable declarations
-
-//  …… ……
-//  …… ……
-
-import 'themes/glitch/styles/index.scss';
-
-//  Styling declarations
-
-//  …… ……
-//  …… ……
-```
-
-We import the glitch styles inside of our theme SCSS and then add our own afterwards to override them.
-All relative paths are resolved relative to the `app/javascript` directory, so you don't need to worry about getting the right number of `..`s in your import declarations.
-
-###  Supplying other packs
-
-Of course, you can overwrite other packs than just `common`.
-The packs which are currently used by glitch are as follows:
+If you want to provide different stylesheets for various pages, you can do this by providing a folder instead of a single stylesheet as your skin.
+This folder should contain a number of files, each of which provides the styling for a different _pack_, which is served depending on page type.
+The available packs are as follows:
 
 - __`about`:__ Rendered on the `about/` page (but *not* `about/more`, etc) and on hashtag pages; this pack provides the timeline component.
 - __`admin`:__ Rendered on all admin pages.
@@ -89,13 +47,36 @@ The packs which are currently used by glitch are as follows:
 - __`settings`:__ Rendered on all settings pages.
 - __`share`:__ Rendered on the "share" page; this pack provides a standalone composer.
 
-These are specified as properties on the `pack` object.
-The values for each pack property must be one of the following:
+The names of the files inside the skin folder should match the pack that they are meant to replace.
+For example, if I have styling that I want to show on the web app but *not* on static pages, I should specify it in `app/javascript/skins/FLAVOUR-NAME/SKIN-NAME/home.scss`.
+
+The `glitch` and `vanilla` frontends only use the `common` pack for styling, but you are welcome to add additional styles to other packs if you wish.
+
+###  Flavours
+
+Like skins, flavours are all loaded from a specific folder; namely, `app/javascript/flavours`.
+Flavours are specified as folders with a special file, called `theme.yml`, which provides the necessarily metadata for Mastodon to load its files.
+Aside from this one required file, the contents of a flavour folder are left entirely up to authors.
+
+The `theme.yml` for a flavour **_must_** have a `pack` property, whose own properties specify the JavaScript files to load for each pack (see above).
+These properties must have one of the following values:
 
 - If the property is not specified, then the fallback pack will be used, if applicable.
 - If the property is specified but is `null`, then no pack will be used.
 - If the property is specified but is a string, then this is interpreted as the pack's filename, and the default options are used.
 - Otherwise, the property must be an object specifying options for the pack.
+
+Here is a sample `theme.yml` file that could be used to generate a flavour:
+
+```yaml
+pack:  #  Pack files
+  common:  #  Options for the `common` pack
+    filename: pack/common.js  #  This file contains all the scripts and styles for the pack
+    stylesheet: true  #  This must be specified for packs which serve styling
+  home: pack/home.js  #  A string can be used if only a filename is needed
+
+fallback: glitch  #  The fallback flavour for any unspecified packs
+```
 
 ###  Pack options
 

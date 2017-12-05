@@ -35,7 +35,7 @@ You can browse our source code and contribute to the project [on Github][glitch-
 - [`data-*` attributes on statuses](./features/status-data-attributes/) for custom CSS targeting
 - [Optional notification muting](./features/optional-notification-muting/)
 - [Optional boost hiding](./features/optional-boost-hiding/)
-- [Advanced themes](./features/themes/)
+- [Advanced theming via flavours+skins](./features/themes/)
 
 ###  How can I help?
 
