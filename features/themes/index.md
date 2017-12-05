@@ -20,10 +20,24 @@ The system works as follows:
 The flavour and skin of the Mastodon web app can be changed in the user preferences.
 For details on creating and installing additional skins and flavours, see below.
 
+###  Installing
+
+To install an existing flavour or skin, you need only to place the flavour or skin file/folder into the appropriate location.
+For flavours, this is:
+
+    app/javascript/flavours/
+
+For skins (where `FLAVOUR-NAME` is the name of the flavour that the skin applies to), this is:
+
+    app/javascript/skins/FLAVOUR-NAME/
+
+Mastodon will automatically detect flavours and skins installed into these locations, although you will likely have to restart your server (and, naturally, recompile your assets).
+This system works well with installation methods such as git submodules, although of course you can simply add the files manually as well.
+
 ###  Skins
 
 Glitch skins are automatically loaded from the folder `app/javascript/skins/FLAVOUR-NAME/`, where `FLAVOUR-NAME` is the name of the flavour that the skin should apply to.
-For example, if you are looking to reskin the `glitch` theme, you should place your skin in the file `app/javascript/skins/glitch/`.
+For example, if you are looking to reskin the `glitch` flavour, you should place your skin in the file `app/javascript/skins/glitch/`.
 
 The simplest skin is just a single (S)CSS file, the name of which will be taken as the name of the skin.
 This stylesheet will be served instead of the `common` styles, which hold all of Mastodon's default styling.
@@ -50,7 +64,7 @@ The available packs are as follows:
 The names of the files inside the skin folder should match the pack that they are meant to replace.
 For example, if I have styling that I want to show on the web app but *not* on static pages, I should specify it in `app/javascript/skins/FLAVOUR-NAME/SKIN-NAME/home.scss`.
 
-The `glitch` and `vanilla` frontends only use the `common` pack for styling, but you are welcome to add additional styles to other packs if you wish.
+The `glitch` and `vanilla` flavours only use the `common` pack for styling, but you are welcome to add additional styles to other packs if you wish.
 
 ###  Flavours
 
@@ -89,13 +103,13 @@ The following options can be provided to packs:
 
 ###  Fallbacks
 
-The `fallback` property specifies a theme or themes from which to draw unspecified packs.
+The `fallback` property specifies a flavour or flavours from which to draw unspecified packs.
 By default, unspecified packs are drawn from the default theme.
-The value of this property can be either the name of a theme, or an array of names, in which case the first present theme will be used.
+The value of this property can be either the name of a flavour, or an array of names, in which case the first present flavour will be used.
 Setting this property to `null` disables fallback behaviour.
 
 ###  Pack directory
 
-Generally speaking, your pack files should be inside of your theme folder.
-If for some reason they aren't (as is the case with the `vanilla` theme, to maintain upstream compatibility), you can specify a different folder inside which to look for packs with the `pack_directory` property.
+Generally speaking, your pack files should be inside of your flavour folder.
+If for some reason they aren't (as is the case with the `vanilla` flavour, to maintain upstream compatibility), you can specify a different folder inside which to look for packs with the `pack_directory` property.
 This should have a string value, and is resolved relative to the application root, *not* `app/javascript`.
