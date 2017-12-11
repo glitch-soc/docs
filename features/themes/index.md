@@ -101,6 +101,21 @@ The following options can be provided to packs:
 - __`stylesheet`:__ If `true`, this pack contains a stylesheet. Must be specified for styles to be loaded. Defaults to `false`.
 - __`use_common`:__ Unless this property is `false`, the `common` pack will also be loaded. Defaults to `true`.
 
+###  Locales
+
+The `locales` property specifies a folder from which to draw locale files to be served with your JavaScript.
+The contents of this directory must be `.js` or `.json` files whose names correspond to language tags and whose default exports are a messages object of the same form as provided by vanilla Mastodon.
+This messages object can be made accessible in your source by importing `getLocale()` from `locales`.
+
+###  Screenshots
+
+You can specify one or more screenshots to render in the flavour's description page using the `screenshot` property.
+Webpack ignores the paths of image assets, so this property should specify *only* the filename.
+It is a good idea to namespace the filename of this file using your flavour name to guarantee uniqueness.
+
+The value of the `screenshot` property must be an image file that Webpack already knows about—we won't try to load it for you.
+Requiring it somewhere in one of your JavaScript files is probably sufficient.
+
 ###  Fallbacks
 
 The `fallback` property specifies a flavour or flavours from which to draw unspecified packs.
@@ -113,3 +128,32 @@ Setting this property to `null` disables fallback behaviour.
 Generally speaking, your pack files should be inside of your flavour folder.
 If for some reason they aren't (as is the case with the `vanilla` flavour, to maintain upstream compatibility), you can specify a different folder inside which to look for packs with the `pack_directory` property.
 This should have a string value, and is resolved relative to the application root, *not* `app/javascript`.
+
+###  Localization
+
+You can provide localization strings for your skins and/or flavours by including a `names.yml` file inside the skin/flavour folder.
+For themes, this file should take the following form:
+
+```yml
+en:
+  flavours:
+    FLAVOUR-NAME:
+      description: [A description of your flavour]
+      name: [Your flavour's name]
+  skins:
+    FLAVOUR-NAME:
+      default: [The name of the default skin for your flavour]
+# …more localizations for other languages
+```
+
+For skins, you only need the `skins` part of the above file:
+
+```yml
+en:
+  skins:
+    FLAVOUR-NAME:
+      SKIN-NAME: [The name of your skin]
+# …more localizations for other languages
+```
+
+This file is loaded alongside all of the other localization data when your server first starts.
