@@ -16,6 +16,7 @@ You can browse our source code and contribute to the project [on Github][glitch-
 - [ostatus.lardbucket.org](https://ostatus.lardbucket.org/)
 - [scifi.fyi](https://scifi.fyi/)
 - [sprite.land](https://sprite.land)
+- [awoo.space](https://awoo.space)
 
 >   (Instance not on the list? Let us know!)
 
