@@ -17,6 +17,9 @@ You can browse our source code and contribute to the project [on Github][glitch-
 - [scifi.fyi](https://scifi.fyi/)
 - [sprite.land](https://sprite.land)
 - [awoo.space](https://awoo.space)
+- [monsterpit.net](https://monsterpit.net)
+- [donphan.social](https://donphan.social)
+
 
 >   (Instance not on the list? Let us know!)
 
