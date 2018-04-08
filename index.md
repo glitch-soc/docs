@@ -19,6 +19,7 @@ You can browse our source code and contribute to the project [on Github][glitch-
 - [awoo.space](https://awoo.space)
 - [monsterpit.net](https://monsterpit.net)
 - [donphan.social](https://donphan.social)
+- [soc.ialis.me](https://soc.ialis.me)
 
 
 >   (Instance not on the list? Let us know!)
