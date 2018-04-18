@@ -18,6 +18,12 @@ You can browse our source code and contribute to the project [on Github][glitch-
 - [sprite.land](https://sprite.land)
 - [awoo.space](https://awoo.space)
 - [monsterpit.net](https://monsterpit.net)
+- [donphan.social](https://donphan.social)
+- [im-in.space](https://im-in.space)
+- [social.wxcafe.net](https://social.wxcafe.net)
+- [imaginair.es](https://imaginair.es)
+- [soc.ialis.me](https://soc.ialis.me)
+
 
 >   (Instance not on the list? Let us know!)
 
