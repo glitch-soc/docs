@@ -23,6 +23,7 @@ You can browse our source code and contribute to the project [on Github][glitch-
 - [social.wxcafe.net](https://social.wxcafe.net)
 - [imaginair.es](https://imaginair.es)
 - [soc.ialis.me](https://soc.ialis.me)
+- [crazynoisybizarre.town](https://crazynoisybizarre.town)
 
 
 >   (Instance not on the list? Let us know!)
