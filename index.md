@@ -44,8 +44,14 @@ You can browse our source code and contribute to the project [on Github][glitch-
 - [Custom profile metadata](./features/profile-metadata/)
 - [`data-*` attributes on statuses](./features/status-data-attributes/) for custom CSS targeting
 - [Optional notification muting](./features/optional-notification-muting/)
-- [Optional boost hiding](./features/optional-boost-hiding/)
 - [Advanced theming via flavours+skins](./features/themes/)
+
+### Features that have made their way upstream
+
+Some of the features originally implemented in glitch-soc have been adopted in
+Mastodon:
+
+- [Optional boost hiding](./upstreamed-features/optional-boost-hiding/)
 
 ###  How can I help?
 
