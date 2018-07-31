@@ -46,6 +46,7 @@ You can browse our source code and contribute to the project [on Github][glitch-
 - [Optional notification muting](./features/optional-notification-muting/)
 - [Optional boost hiding](./features/optional-boost-hiding/)
 - [Advanced theming via flavours+skins](./features/themes/)
+- [Bookmarks](./features/bookmarks/)
 
 ###  How can I help?
 
