@@ -2,7 +2,7 @@
 title: Profile metadata
 ---
 
-`glitch-soc` allows users to input optional `key: value` pairs as YAML-esque frontmatter at the beginning of their bios, which is then rendered in a table by the frontend and on static pages.
+Both `Mastodon` and `glitch-soc` allow users to input optional `key: value` pairs in their bios, rendered in a table by the frontend and on static pages.
 
 This is what it looks like for logged-in users on a glitch-soc server:
 
@@ -11,6 +11,12 @@ This is what it looks like for logged-in users on a glitch-soc server:
 And for everyone else, it shows to the right of the avatar:
 
 ![static](static.png)
+
+This is done from the profile edition page in glitch-soc's settings.
+
+## Legacy glitch-soc implementation
+
+Before being adopted upstream, `glitch-soc` users used optional `key: value` pairs as YAML-esque frontmatter at the beginning of their bios.
 
 An example of a bio with this frontmatter is as follows:
 
