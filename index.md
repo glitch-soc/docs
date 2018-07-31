@@ -41,7 +41,6 @@ You can browse our source code and contribute to the project [on Github][glitch-
 - [Collapsible toots](./features/collapsible-toots/)
 - [Toot visibility icons](./features/visibility-icons/)
 - [Local-only toots](./features/local-only-toots/)
-- [Custom profile metadata](./features/profile-metadata/)
 - [`data-*` attributes on statuses](./features/status-data-attributes/) for custom CSS targeting
 - [Optional notification muting](./features/optional-notification-muting/)
 - [Advanced theming via flavours+skins](./features/themes/)
@@ -52,6 +51,7 @@ Some of the features originally implemented in glitch-soc have been adopted in
 Mastodon:
 
 - [Optional boost hiding](./upstreamed-features/optional-boost-hiding/)
+- [Custom profile metadata](./upstreamed-features/profile-metadata/)
 
 ###  How can I help?
 
