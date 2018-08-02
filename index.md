@@ -51,7 +51,7 @@ Some of the features originally implemented in glitch-soc have been adopted in
 Mastodon:
 
 - [Optional boost hiding](./upstreamed-features/optional-boost-hiding/)
-- [Optional notification muting](./features/optional-notification-muting/)
+- [Optional notification muting](./upstreamed-features/optional-notification-muting/)
 - [Custom profile metadata](./upstreamed-features/profile-metadata/)
 
 ###  How can I help?
