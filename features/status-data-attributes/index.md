@@ -14,8 +14,8 @@ The domain part is left out for users on the same server (eg. `@eve@example.com`
 Those attributes can be used for writing custom CSS via UserStyle. To use UserStyle, you need
 a browser extension/add-on, such as Stylish:
 
-- [Stylish for Firefox][StyFF]
-- [Stylish for Chrome][StyGC]
+- [Stylus for Firefox][StyFF]
+- [Stylus for Chrome][StyGC]
 
 ### Example styles
 
@@ -51,5 +51,5 @@ is to stop it from hiding notifications about that user boosting your own toots.
 There are sure to be other fun uses for those data attributes, let us know if you find anything worth
 sharing so we can add it here!
 
-[StyFF]: https://addons.mozilla.org/cs/firefox/addon/stylish/
-[StyGC]: https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe
+[StyFF]: https://addons.mozilla.org/en-US/firefox/addon/styl-us/
+[StyGC]: https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne
