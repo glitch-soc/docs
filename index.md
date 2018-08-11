@@ -41,6 +41,7 @@ You can browse our source code and contribute to the project [on Github][glitch-
 - [Collapsible toots](./features/collapsible-toots/)
 - [Toot visibility icons](./features/visibility-icons/)
 - [Local-only toots](./features/local-only-toots/)
+- [Threaded mode](./features/threaded-mode/)
 - [`data-*` attributes on statuses](./features/status-data-attributes/) for custom CSS targeting
 - [Advanced theming via flavours+skins](./features/themes/)
 - [Bookmarks](./features/bookmarks/)
