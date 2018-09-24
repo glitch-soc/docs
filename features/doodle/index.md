@@ -13,7 +13,7 @@ Doodles are accessible via the file upload button.
 
 
 
-Here is a screenshot of the doodle modal openned.
+Here is a screenshot of the doodle modal opened.
 ![View of glitch-soc with the doodle open](doodle_2.png)  
 
 
