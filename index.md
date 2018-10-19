@@ -27,6 +27,7 @@ You can browse our source code and contribute to the project [on Github][glitch-
 - [crazynoisybizarre.town](https://crazynoisybizarre.town)
 - [glaceon.social](https://glaceon.social)
 - [playvicious.social](https://playvicious.social)
+- [chomp.life](https://chomp.life/)
 
 
 >   (Instance not on the list? Let us know!)
