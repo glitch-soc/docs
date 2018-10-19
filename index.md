@@ -26,6 +26,7 @@ You can browse our source code and contribute to the project [on Github][glitch-
 - [soc.ialis.me](https://soc.ialis.me)
 - [crazynoisybizarre.town](https://crazynoisybizarre.town)
 - [glaceon.social](https://glaceon.social)
+- [playvicious.social](https://playvicious.social)
 
 
 >   (Instance not on the list? Let us know!)
