@@ -59,6 +59,22 @@ Mastodon:
 - [Optional notification muting](./upstreamed-features/optional-notification-muting/)
 - [Custom profile metadata](./upstreamed-features/profile-metadata/)
 
+### How to install and update `glitch-soc`?
+
+`glitch-soc` is based on Mastodon's master branch. The installation steps are thus
+the same as [described in the Mastodon documentation][https://docs.joinmastodon.org/administration/installation/].
+
+Updating from Mastodon (or from an earlier `glitch-soc` version) is exactly like updating from one Mastodon version
+to another, and will in general require the following steps:
+
+1. Fetch the source code (typically, `git pull`)
+2. Install dependencies: `bundle install && yarn install`
+3. Run the pre-deployment database migrations: `RAILS_ENV=production SKIP_POST_DEPLOYMENT_MIGRATIONS=true bundle exec rails db:migrate`
+4. Pre-compile static assets: `RAILS_ENV=production bundle exec rails assets:precompile`
+   Due to glitch-soc shipping with two front-end flavours, this step requires more resources than it does on mainline Mastodon.
+5. Restart the services: `systemctl restart mastodon-{web,sidekiq,streaming}`
+6. Run the post-deployment database migrations: `RAILS_ENV=production bundle exec rails db:migrate`
+
 ###  How can I help?
 
 You can get information on contributing [here][Contributing].
