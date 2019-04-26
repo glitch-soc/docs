@@ -63,7 +63,7 @@ Mastodon:
 ### How to install and update `glitch-soc`?
 
 `glitch-soc` is based on Mastodon's master branch. The installation steps are thus
-the same as [described in the Mastodon documentation][https://docs.joinmastodon.org/administration/installation/].
+the same as [described in the Mastodon documentation](https://docs.joinmastodon.org/administration/installation/).
 
 Updating from Mastodon (or from an earlier `glitch-soc` version) is exactly like updating from one Mastodon version
 to another, and will in general require the following steps:
