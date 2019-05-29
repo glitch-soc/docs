@@ -73,8 +73,9 @@ to another, and will in general require the following steps:
 3. Run the pre-deployment database migrations: `RAILS_ENV=production SKIP_POST_DEPLOYMENT_MIGRATIONS=true bundle exec rails db:migrate`
 4. Pre-compile static assets: `RAILS_ENV=production bundle exec rails assets:precompile`
    Due to glitch-soc shipping with two front-end flavours, this step requires more resources than it does on mainline Mastodon.
-5. Restart the services: `systemctl restart mastodon-{web,sidekiq,streaming}`
-6. Run the post-deployment database migrations: `RAILS_ENV=production bundle exec rails db:migrate`
+5. Restart the services: `systemctl reload mastodon-web && systemctl restart mastodon-{sidekiq,streaming}`
+6. Clean Rails' cache: `RAILS_ENV=production bin/tootctl cache clear`
+7. Run the post-deployment database migrations: `RAILS_ENV=production bundle exec rails db:migrate`
 
 ###  How can I help?
 
