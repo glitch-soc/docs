@@ -23,6 +23,7 @@ You can browse our source code and contribute to the project [on Github][glitch-
 - [im-in.space](https://im-in.space)
 - [imaginair.es](https://imaginair.es)
 - [monsterpit.net](https://monsterpit.net)
+- [muensterland.social](https://muensterland.social)
 - [ostatus.lardbucket.org](https://ostatus.lardbucket.org/)
 - [playvicious.social](https://playvicious.social)
 - [scifi.fyi](https://scifi.fyi/)
