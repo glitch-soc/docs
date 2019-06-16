@@ -68,10 +68,15 @@ the same as [described in the Mastodon documentation](https://docs.joinmastodon.
 Updating from Mastodon (or from an earlier `glitch-soc` version) is exactly like updating from one Mastodon version
 to another, and will in general require the following steps:
 
+0. Switch to glitch-soc, for instance by:
+  a. adding a new remote `git remote add glitch-soc https://github.com/glitch-soc/mastodon`
+  b. fetching it (`git fetch glitch-soc`)
+  c. switching to the `master` branch from that repo (`git checkout glitch-soc/master`)
 1. Fetch the source code (typically, `git pull`)
 2. Install dependencies: `bundle install && yarn install`
 3. Run the pre-deployment database migrations: `RAILS_ENV=production SKIP_POST_DEPLOYMENT_MIGRATIONS=true bundle exec rails db:migrate`
 4. Pre-compile static assets: `RAILS_ENV=production bundle exec rails assets:precompile`
+
    Due to glitch-soc shipping with two front-end flavours, this step requires more resources than it does on mainline Mastodon.
 5. Restart the services: `systemctl reload mastodon-web && systemctl restart mastodon-{sidekiq,streaming}`
 6. Clean Rails' cache: `RAILS_ENV=production bin/tootctl cache clear`
