@@ -16,6 +16,7 @@ You can browse our source code and contribute to the project [on Github][glitch-
 - [crazynoisybizarre.town](https://crazynoisybizarre.town)
 - [dev.glitch.social](https://dev.glitch.social/)
 - [donphan.social](https://donphan.social)
+- [falafel.clic2000.net](https://falafel.clic2000.fr)
 - [glaceon.social](https://glaceon.social)
 - [hackers.town](https://hackers.town)
 - [im-in.space](https://im-in.space)
