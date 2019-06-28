@@ -27,6 +27,7 @@ You can browse our source code and contribute to the project [on Github][glitch-
 - [scifi.fyi](https://scifi.fyi/)
 - [sdfn-01.ninjawedding.org](https://sdfn-01.ninjawedding.org/)
 - [soc.ialis.me](https://soc.ialis.me)
+- [social.dev-wiki.de](https://social.dev-wiki.de)
 - [social.wxcafe.net](https://social.wxcafe.net)
 - [sprite.land](https://sprite.land)
 - [toot-lab.reclaim.technology](https://toot-lab.reclaim.technology/)
