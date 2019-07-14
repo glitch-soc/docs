@@ -36,6 +36,8 @@ You can browse our source code and contribute to the project [on Github][glitch-
 
 
 >   (Instance not on the list? Let us know!)
+>
+>   (The contents, availability, or behavior of the listed instances are not actively monitored. If you think any of this instances goes against our [Code of Conduct](https://github.com/glitch-soc/mastodon/blob/master/CODE_OF_CONDUCT.md), you are encouraged to report it to the project team)
 
 ###  What's different?
 
