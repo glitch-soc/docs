@@ -1,5 +1,5 @@
 ---
-title: Replies in lists
+title: Misleading links highlighting
 ---
 
 By default, `glitch-soc` will display the target domain of any link that does not
