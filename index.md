@@ -6,39 +6,6 @@ Welcome to the documentation site for `glitch-soc`!
 `glitch-soc` is a friendly [fork][] of the open-source social media software [Mastodon][], with the aim of providing additional features at the risk of potentially less stable software.
 You can browse our source code and contribute to the project [on Github][glitch-soc].
 
-###  Who is running `glitch-soc`?
-
-`glitch-soc` is currently in use on the following instances:
-
-- [aleph.land](https://aleph.land)
-- [awoo.space](https://awoo.space)
-- [chomp.life](https://chomp.life/)
-- [crazynoisybizarre.town](https://crazynoisybizarre.town)
-- [dev.glitch.social](https://dev.glitch.social/)
-- [donphan.social](https://donphan.social)
-- [efdn.club](https://efdn.club)
-- [falafel.clic2000.net](https://falafel.clic2000.fr)
-- [glaceon.social](https://glaceon.social)
-- [hackers.town](https://hackers.town)
-- [im-in.space](https://im-in.space)
-- [imaginair.es](https://imaginair.es)
-- [monsterpit.net](https://monsterpit.net)
-- [muensterland.social](https://muensterland.social)
-- [ostatus.lardbucket.org](https://ostatus.lardbucket.org/)
-- [playvicious.social](https://playvicious.social)
-- [scifi.fyi](https://scifi.fyi/)
-- [sdfn-01.ninjawedding.org](https://sdfn-01.ninjawedding.org/)
-- [soc.ialis.me](https://soc.ialis.me)
-- [social.dev-wiki.de](https://social.dev-wiki.de)
-- [social.wxcafe.net](https://social.wxcafe.net)
-- [sprite.land](https://sprite.land)
-- [toot-lab.reclaim.technology](https://toot-lab.reclaim.technology/)
-
-
->   (Instance not on the list? Let us know!)
->
->   (The contents, availability, or behavior of the listed instances are not actively monitored. If you think any of this instances goes against our [Code of Conduct](https://github.com/glitch-soc/mastodon/blob/master/CODE_OF_CONDUCT.md), you are encouraged to report it to the project team)
-
 ###  What's different?
 
 `glitch-soc` adds a number of experimental features to Mastodon, such as:
@@ -110,6 +77,38 @@ You can get information on contributing [here][Contributing].
 
 `glitch-soc` is beta software, and under active development.
 Use at your own risk!
+
+###  Who is running `glitch-soc`?
+
+`glitch-soc` is currently in use on the following instances:
+
+- [aleph.land](https://aleph.land)
+- [awoo.space](https://awoo.space)
+- [chomp.life](https://chomp.life/)
+- [crazynoisybizarre.town](https://crazynoisybizarre.town)
+- [dev.glitch.social](https://dev.glitch.social/)
+- [donphan.social](https://donphan.social)
+- [efdn.club](https://efdn.club)
+- [falafel.clic2000.net](https://falafel.clic2000.fr)
+- [glaceon.social](https://glaceon.social)
+- [hackers.town](https://hackers.town)
+- [im-in.space](https://im-in.space)
+- [imaginair.es](https://imaginair.es)
+- [monsterpit.net](https://monsterpit.net)
+- [muensterland.social](https://muensterland.social)
+- [ostatus.lardbucket.org](https://ostatus.lardbucket.org/)
+- [playvicious.social](https://playvicious.social)
+- [scifi.fyi](https://scifi.fyi/)
+- [sdfn-01.ninjawedding.org](https://sdfn-01.ninjawedding.org/)
+- [soc.ialis.me](https://soc.ialis.me)
+- [social.dev-wiki.de](https://social.dev-wiki.de)
+- [social.wxcafe.net](https://social.wxcafe.net)
+- [sprite.land](https://sprite.land)
+- [toot-lab.reclaim.technology](https://toot-lab.reclaim.technology/)
+
+>   (Instance not on the list? Let us know!)
+>
+>   (The contents, availability, or behavior of the listed instances are not actively monitored. If you think any of this instances goes against our [Code of Conduct](https://github.com/glitch-soc/mastodon/blob/master/CODE_OF_CONDUCT.md), you are encouraged to report it to the project team)
 
 [Contributing]: ./contributing/
 [Features]: ./features/
