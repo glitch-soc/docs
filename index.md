@@ -54,7 +54,6 @@ You can browse our source code and contribute to the project [on Github][glitch-
 - [Threaded mode](./features/threaded-mode/)
 - [`data-*` attributes on statuses](./features/status-data-attributes/) for custom CSS targeting
 - [Advanced theming via flavours+skins](./features/themes/)
-- [Bookmarks](./features/bookmarks/)
 - [Doodle](./features/doodle/)
 
 ### Features that have made their way upstream
@@ -65,6 +64,7 @@ Mastodon:
 - [Optional boost hiding](./upstreamed-features/optional-boost-hiding/)
 - [Optional notification muting](./upstreamed-features/optional-notification-muting/)
 - [Custom profile metadata](./upstreamed-features/profile-metadata/)
+- [Bookmarks](./upstreamed-features/bookmarks/)
 
 ### How to install and update `glitch-soc`?
 
