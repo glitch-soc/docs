@@ -32,7 +32,7 @@ who the author of the toot is, and what filters matched the toot.
 
 ![show why popup, collapsed](./show-why-collapsed.png)
 
-![show why popup, expended](./show-why-expended.png)
+![show why popup, expanded](./show-why-expanded.png)
 
 Finally, clicking the “Show” button of that popup lets you see the toot, with
 an additional button to hide it again.
