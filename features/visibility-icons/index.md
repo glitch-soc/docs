@@ -9,3 +9,7 @@ With the regular Mastodon front-end, you can't really tell when a toot is unlist
 This way, you always know what visibility a toot has.
 
 ![visibility overview](visibility.png)
+
+By enabling it in the [app settings](../app-settings/), those visibility icons can be made more colorful, so that you can tell them apart at a glance.
+
+![colored visibility icons](colored.png)
