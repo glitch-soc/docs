@@ -88,6 +88,17 @@ to another, and will in general require the following steps:
 6. Clean Rails' cache: `RAILS_ENV=production bin/tootctl cache clear`
 7. Run the post-deployment database migrations: `RAILS_ENV=production bundle exec rails db:migrate`
 
+### How to migrate back to upstream Mastodon?
+
+Should you wish to migrate back to upstream Mastodon for any reason, this is possible, at the cost of
+every glitch-specific feature, of course. There are a few things that you need to be aware of:
+- Toots written in HTML or Markdown will not render as such anymore and will display the raw source instead.
+- Local-only toots will not be local-only anymore, remote instances and users will be able to see them and
+  interact with them, should they be mentionned in any way.
+- If you have migrated to glitch-soc before Mastodon implemented bookmarks, migrations from Mastodon's source
+  code will fail to execute until you edit `db/migrate/20180831171112_create_bookmarks.rb` to remove
+  everything between `def change` and the corresponding `end`.
+
 ###  How can I help?
 
 You can get information on contributing [here][Contributing].
