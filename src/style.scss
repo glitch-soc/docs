@@ -173,7 +173,7 @@ main {
   position: relative;
   margin: 1rem auto 0;
   padding: 1.35rem 1rem 2.7rem;
-  max-width: 28rem;
+  max-width: 48rem;
   color: $web-text-color;
   background: $web-foreground-color;
   -webkit-hyphens: auto;
@@ -330,11 +330,11 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-family: "VT323", monospace;
   margin: 1.35rem auto;
-  max-width: 11.25em;
   font-size: 3.5em;
   font-weight: 500;
   line-height: 1;
   color: $web-bright-color;
+  text-align: center;
 }
 
 h2 {
