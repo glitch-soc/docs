@@ -17,6 +17,7 @@ You can browse our source code and contribute to the project [on Github][glitch-
 - [Reply selection in lists](./features/lists-show-replies-to/)
 - [Filter improvements](./features/filter-improvements/)
 - [Highlighting of misleading links](./features/misleading-link-highlighting/)
+- [Hiding follower count](./features/hide-follower-count/)
 - [An app settings modal](./features/app-settings/)
 - [Collapsible toots](./features/collapsible-toots/)
 - [Toot visibility icons](./features/visibility-icons/)
