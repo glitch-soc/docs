@@ -14,6 +14,7 @@ You can browse our source code and contribute to the project [on Github][glitch-
   - Images inside the CW spoiler
   - fullwidth images
   - scaling options
+- [Formatted toots](./features/rich-text)
 - [Reply selection in lists](./features/lists-show-replies-to/)
 - [Filter improvements](./features/filter-improvements/)
 - [Highlighting of misleading links](./features/misleading-link-highlighting/)
