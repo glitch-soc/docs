@@ -4,7 +4,7 @@ title: Bookmarks
 
 `glitch-soc` allows users to bookmark toots for accessing them later.
 
-Lie favourites, the list of bookmarked toots is stored server-side so that it
+Like favourites, the list of bookmarked toots is stored server-side so that it
 can be accessed from different devices. Unlike favourites, though, that
 information is not shared with any other user, not even the author of the
 bookmarked toot.
