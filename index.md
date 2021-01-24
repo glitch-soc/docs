@@ -40,7 +40,7 @@ Mastodon:
 
 ### How to install and update `glitch-soc`?
 
-`glitch-soc` is based on Mastodon's master branch. The installation steps are thus
+`glitch-soc` is based on Mastodon's `main` branch. The installation steps are thus
 the same as [described in the Mastodon documentation](https://docs.joinmastodon.org/admin/install/).
 
 Updating from Mastodon (or from an earlier `glitch-soc` version) is exactly like updating from one Mastodon version
@@ -49,7 +49,7 @@ to another, and will in general require the following steps:
 0. Switch to glitch-soc, for instance by:
     - adding a new remote `git remote add glitch-soc https://github.com/glitch-soc/mastodon`
     - fetching it (`git fetch glitch-soc`)
-    - switching to the `master` branch from that repo (`git checkout glitch-soc/master`)   
+    - switching to the `main` branch from that repo (`git checkout glitch-soc/main`)   
 1. Fetch the source code (typically, `git pull`)
 2. Install dependencies: `bundle install && yarn install`
 3. Run the pre-deployment database migrations: `RAILS_ENV=production SKIP_POST_DEPLOYMENT_MIGRATIONS=true bundle exec rails db:migrate`
