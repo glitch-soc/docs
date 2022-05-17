@@ -25,12 +25,12 @@ The interface allow you to do basic drawings:
 
 The controls are as follow:
 ![A screenshot of the controls](doodle_controls.png)
-- Smoothing: the stroke will look less pixelated)
-- Adapatative: 
-- Weight: how large the stroke will be.
+- Smoothing: the stroke will look less pixelated
+- Adaptative: 
+- Weight: how large the stroke will be
 - Drop down: Choose the size of the image (square 500, tootbanner, 480p, SVGA, 16:9)
 - Pencil: draw lines
-- Shaower bath: draw the background
+- Shower bath: draw the background
 - Arrow: undo the last action
 - Bin: clean the drawing
 - Colour square: select a colour to draw with
