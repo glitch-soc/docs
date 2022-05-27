@@ -37,6 +37,7 @@ Mastodon:
 - [Optional notification muting](./upstreamed-features/optional-notification-muting/)
 - [Custom profile metadata](./upstreamed-features/profile-metadata/)
 - [Bookmarks](./upstreamed-features/bookmarks/)
+- Upload of audio-only media
 
 ### How to install and update `glitch-soc`?
 

@@ -34,7 +34,3 @@ This option is configurable in [App Settings](../app-settings/).
 **Letterbox OFF**
 
 ![letterbox off](letterbox-off.png)
-
-### Audio media
-
-Users can upload audio-only media files. Supported formats are MP3, M4A, OGG, WAV.

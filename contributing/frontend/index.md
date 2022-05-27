@@ -107,7 +107,7 @@ It's incredibly disorganized but try to make do :bowing_woman:.
 With respect to files in the `mastodon` or `styles` folder, try to document your code, but keep things somewhat minimal so that we don't have conflicts with upstream.
 With files in the `glitch` folder, document everything liberally.
 I favour Markdown syntax inside of block comments, personally.
-If you feel up to it, include a OStatus username by your code so that people know who to contact if they have any questions :information_desk_person:.
+If you feel up to it, include a Fediverse username by your code so that people know who to contact if they have any questions :information_desk_person:.
 
 I am of the opinion that someone should be able to figure out more-or-less everything a file does just by reading the comments (ie, without understanding a line of code), and this will make it much easier for others who come along to do [`glitch-soc/docs`](https://github.com/glitch-soc/docs/) documentation work, who might not be fluent programmers.
 
