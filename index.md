@@ -21,7 +21,7 @@ You can browse our source code and contribute to the project [on Github][glitch-
 - [Hiding follower count](./features/hide-follower-count/)
 - [An app settings modal](./features/app-settings/)
 - [Collapsible toots](./features/collapsible-toots/)
-- [Toot visibility icons](./features/visibility-icons/)
+- [Colored toot visibility icons](./features/colored-visibility-icons/)
 - [Local-only toots](./features/local-only-toots/)
 - [Threaded mode](./features/threaded-mode/)
 - [`data-*` attributes on statuses](./features/status-data-attributes/) for custom CSS targeting
@@ -38,6 +38,7 @@ Mastodon:
 - [Custom profile metadata](./upstreamed-features/profile-metadata/)
 - [Bookmarks](./upstreamed-features/bookmarks/)
 - Upload of audio-only media
+- Toot visibility icon (at the top right of a toot)
 
 ### How to install and update `glitch-soc`?
 
