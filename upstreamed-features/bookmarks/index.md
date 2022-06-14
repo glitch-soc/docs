@@ -21,6 +21,6 @@ Bookmarked toots can then be accessed from the "Getting started menu":
 
 ### API
 
-When using the API to interact with `glitch-soc`, you can use a `POST` to the `/api/v1/statuses/:id/bookmark` endpoint to bookmark a toot and `/api/v1/statuses:id/unbookmark` to remove a bookmark.
+When using the API to interact with `glitch-soc`, you can use a `POST` to the `/api/v1/statuses/:id/bookmark` endpoint to bookmark a toot and `/api/v1/statuses/:id/unbookmark` to remove a bookmark.
 
 You can also `GET` `/api/v1/bookmarks` to get the list of toots bookmarked by the logged-in user.
