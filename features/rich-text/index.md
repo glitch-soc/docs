@@ -21,7 +21,7 @@ blockquotes, inline code, code blocks, subscript, superscript and lists.
 
 Toots can be written in three source formats:
 - Plain text: toots are treated like in vanilla Mastodon, and are not formatted
-- Markdown: toots can be written in [Markdown](markdown), as understood by [Redcarpet](redcarpet)
+- Markdown: toots can be written in [Markdown][markdown], as understood by [Redcarpet][redcarpet]
 - HTML: toots are written directly in HTML (but sanitized to strip any unsupported formatting)
 
 You can write toots in Markdown or HTML from the `glitch` flavour by first enabling “Show content-type choice when authoring toots”
