@@ -15,7 +15,7 @@ The system works as follows:
     By default, `glitch-soc` comes with two flavours: `glitch`, which is the default, and `vanilla`, which is the frontend used by upstream.
 
 2.  Each flavour can have any number of _skins_, which are alternate stylesheets used with the flavour.
-    [The `win95` theme](https://github.com/cybrespace/mastodon/tree/theme_win95) from `cybrespace:mastodon` is an example alternate skin for the `vanilla` flavour.
+    [The `win95` theme](https://github.com/cybrespace/mastodon/blob/cybrespace/app/javascript/styles/win95.scss) from `cybrespace:mastodon` is an example alternate skin for the `vanilla` flavour.
 
 The flavour and skin of the Mastodon web app can be changed in the user preferences.
 For details on creating and installing additional skins and flavours, see below.
