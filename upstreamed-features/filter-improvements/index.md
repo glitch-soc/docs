@@ -3,7 +3,7 @@ title: Improved filters
 ---
 
 `glitch-soc`'s interface lets you handle filtered toots in a number of different ways,
-configurable through the [app settings](../app-settings/).
+configurable through the [app settings](../../features/app-settings/).
 
 ![app settings](./app-settings.png)
 
